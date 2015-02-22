@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>react-live</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="icon" href="imgs/logo.png">
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	{{{body}}}
+	<script src="https://cdn.socket.io/socket.io-1.3.4.js"></script>
+
+	
+	{{#dev mode}}
+		<script src="js/bundle.js"></script>
+	{{/dev}}
+
+	{{#prod mode}}
+	<script src="js/bundle.min.js"></script>
+	{{/prod}}
+	
+</body>
+</html>
